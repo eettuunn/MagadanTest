@@ -1,0 +1,14 @@
+digraph G {
+            rankdir = TB;
+            nodesep = 0.3;
+            edge[arrowhead = vee, arrowsize = 0.9, color = navy];
+            "MccSoft.Magadan.App" [style=bold];
+
+             "MccSoft.Magadan.App" -> "MccSoft.Magadan.Common"
+ "MccSoft.Magadan.App" -> "MccSoft.Magadan.Domain"
+ "MccSoft.Magadan.App" -> "MccSoft.Magadan.Persistence"
+ "MccSoft.Magadan.Persistence" -> "MccSoft.Magadan.Common"
+ "MccSoft.Magadan.Persistence" -> "MccSoft.Magadan.Domain"
+ "MccSoft.Magadan.Domain" -> "MccSoft.Magadan.Common"
+
+            }
